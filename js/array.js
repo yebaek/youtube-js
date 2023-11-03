@@ -64,3 +64,23 @@ console.log(fruits);
 const fruits2 = ['🍐', '🥥'];
 const newFruits = fruits.concat(fruits2);
 console.log(newFruits);
+
+// 5. Searching
+// indexOf: find the index / 배열 안에 어떤 값이 몇번째 인덱스에 있는지 알 수 있다.
+  console.clear();
+  console.log(fruits);
+  console.log(fruits.indexOf('🍎'));
+  console.log(fruits.indexOf('🍉'));
+  console.log(fruits.indexOf('🥥')); // 배열안에 해당하는 값이 없을 땐 -1이 출력됨
+
+  // includes: 배열안에 수박이 있는지 없는지 알 수 있다(true/false로 return)
+  console.log(fruits.includes('🍉')); // 배열에 수박이 있는지 없는지 true/false로 return한다
+  console.log(fruits.includes('🥥')); // 가지고 있지 않는 데이터는 false
+
+  // lastIndexOf
+  console.clear();
+  fruits.push('🍎');
+  console.log(fruits);
+  console.log(fruits.indexOf('🍎')); // 제일 첫 번째로 해당하는 값을 만나면 그 값이 들어있는 인덱스를 return함
+  console.log(fruits.lastIndexOf('🍎')); // 제일 마지막에 들어있는 값을 return함
+  
